@@ -1,1 +1,31 @@
-
+<form class="login-form" [formGroup]="loginForm" (ngSubmit)="onSubmit()" aria-labelledby="login-form__title">
+    <h1 class="login-form__title">{{ h1 }}</h1>
+    <div class="login-form__field">
+        <label class="login-form__label" for="login-form__email">Informe seu e-mail: </label>
+        <input class="login-form__input" type="email" formControlName="loginEmail" aria-required="true"
+            autocomplete="email" />
+    </div>
+    <div class="login-form__field">
+        <label class="login-form__label" for="login-form__password">Informe sua senha: </label>
+        <input class="login-form__input" type="password" formControlName="loginPassword" aria-required="true"
+            autocomplete="current-password" />
+    </div>
+    <div class="login-form__actions">
+        <button class="login-form__button" type="submit" [disabled]="!loginForm.valid" (click)="onSubmit()"
+            routerLink="/dashboard">
+            Entrar
+        </button>
+    </div>
+    <div class="login-form__forgot">
+        Esqueceu sua senha?
+        <a class="login-form__link" routerLink="/reset-password">
+            <span>Redefinir Senha</span>
+        </a>
+    </div>
+    <div class="login-form__signup">
+        Não tem conta?
+        <a class="login-form__link" routerLink="/signup">
+            <span>Criar conta</span>
+        </a>
+    </div>
+</form>
