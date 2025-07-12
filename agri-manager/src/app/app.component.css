@@ -1,0 +1,20 @@
+.main {
+    margin: 10px;
+    padding: 5px;
+}
+
+.main__content {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.main__logo {
+    margin: auto;
+    width: 7%;
+}
+
+.main__title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    color: #333;
+}
