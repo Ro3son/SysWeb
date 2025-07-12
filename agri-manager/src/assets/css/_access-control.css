@@ -1,0 +1,66 @@
+.login-form,
+.signup-form,
+.reset-password-form {
+    font-family: 'Arial', sans-serif;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1em;
+    margin: 1em auto 1em auto;
+    padding: 2em;
+    max-width: 25em;
+    width: 100%;
+    background-color: whitesmoke;
+    border-radius: 12px;
+}
+
+.login-form__title,
+.signup-form__title,
+.reset-password-form__title {
+    font-size: 0.90em;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.login-form__label,
+.signup-form__label,
+.reset-password-form__label {
+    font-size: 0.9em;
+}
+
+.login-form__input,
+.login-form__button,
+.signup-form__input,
+.signup-form__button,
+.reset-password-form__input,
+.reset-password-form__button {
+    font-size: 1em;
+    width: 100%;
+    margin: 0.5em 0;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.login-form__input:focus,
+.signup-form__input:focus,
+.reset-password-form__input:focus {
+    box-shadow: 0 0 0 2px #000;
+}
+
+.login-form__button,
+.signup-form__button,
+.reset-password-form__button {
+    cursor: pointer;
+    margin: 30px 0 30px 0;
+    border: none;
+    background-color: #14ae5c;
+    color: #000;
+}
+
+.login-form__button:hover,
+.signup-form__button:hover,
+.reset-password-form__button:hover {
+    background-color: #e0eddc;
+}
