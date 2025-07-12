@@ -1,0 +1,11 @@
+.login-form__forgot,
+.login-form__signup {
+    font-size: 0.9em;
+    text-align: center;
+}
+
+.login-form__link {
+    cursor: pointer;
+    margin: 10px auto 10px auto;
+    text-decoration: underline;
+}
