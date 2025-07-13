@@ -1,1 +1,31 @@
-
+<form class="signup-form" [formGroup]="signupForm" (ngSubmit)="onSubmit()">
+    <h1 class="signup-form__title">{{ h1 }}</h1>
+    <div class="signup-form__field">
+        <label class="signup-form__label" for="signup-form__name">Digite seu nome:*</label>
+        <input class="signup-form__input" type="text" id="signup-form__name" formControlName="name" required />
+    </div>
+    <div class="signup-form__field">
+        <label class="signup-form__label" for="signup-form__email">E-mail:*</label>
+        <input class="signup-form__input" type="email" id="signup-form__email" formControlName="email" required />
+    </div>
+    <div class="signup-form__field">
+        <label class="signup-form__label" for="signup-form__password">Senha:*</label>
+        <input class="signup-form__input" type="password" id="signup-form__password" formControlName="password"
+            required />
+    </div>
+    <div class="signup-form__field">
+        <label class="signup-form__label" for="signup-form__jobtitle">Cargo:*</label>
+        <input class="signup-form__input" type="text" list="job__titles" id="signup-form__jobtitle"
+            formControlName="jobtitle" required />
+        <datalist id="job__titles">
+            <option value="Auxiliar">
+            <option value="Assistente">
+            <option value="Técnico">
+            <option value="Engenheiro">
+            <option value="Gerente">
+        </datalist>
+    </div>
+    <div class="signup-form__actions">
+        <button class="signup-form__button" type="submit" [disabled]="!signupForm.valid">Cadastrar</button>
+    </div>
+</form>
