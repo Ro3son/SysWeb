@@ -1,6 +1,6 @@
 # SysWeb
 
-Pré-projeto front-end orientado a DDD.
+Pré-projeto front-end orientado a DDD para um gerenciador agrícola.
 
 ### Demonstração
 
